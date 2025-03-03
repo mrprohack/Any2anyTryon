@@ -91,7 +91,7 @@ def generate_image(pipe, model_image_path, garment_image_path, prompt="", height
 
 def main():
     parser = argparse.ArgumentParser(description='Virtual Try-on Image Generation')
-    parser.add_argument('--model_path', type=str, default="black-forest-labs/FLUX.1-dev", help='Path to the model')
+    parser.add_argument('--model_path', type=str, default="black-forest-labs/FLUX.1-schnell", help='Path to the model')
     parser.add_argument('--model_image', type=str, help='Path to the model image')
     parser.add_argument('--garment_image', type=str, help='Path to the garment image')
     parser.add_argument('--prompt', type=str, default="")
