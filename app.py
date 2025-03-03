@@ -19,7 +19,7 @@ device = torch.device("cuda")
 torch_dtype = torch.bfloat16
 
 def load_models(device=device, torch_dtype=torch_dtype,):
-    bfl_repo = "black-forest-labs/FLUX.1-dev"
+    bfl_repo = "black-forest-labs/FLUX.1-schnell"
     # Enable memory efficient attention
     text_encoder = CLIPTextModel.from_pretrained(bfl_repo, subfolder="text_encoder", torch_dtype=torch_dtype,)
     text_encoder_2 = T5EncoderModel.from_pretrained(bfl_repo, subfolder="text_encoder_2", torch_dtype=torch_dtype,)
